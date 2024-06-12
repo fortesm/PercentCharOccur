@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2022/05/08 22:28:46.000.163,=C:\Users\forte\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/08 14:39:17.000.483,=C:\Users\forte\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/08 14:39:51.000.896,C:\Projetos\SABIUM\Teste-Marcelo Fortes\Ex1\UMain.dfm=C:\Users\forte\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2022/06/08 14:39:51.000.896,C:\Projetos\SABIUM\Teste-Marcelo Fortes\Ex1\UMain.pas=C:\Users\forte\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/06/08 14:40:04.000.583,C:\Projetos\SABIUM\Teste-Marcelo Fortes\Ex1\Exercicio1.dproj=C:\Users\forte\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
+    <Transaction>2024/06/12 03:38:17.000.018,C:\Projetos\PercentCharOccur\Exercicio1.dproj=C:\Projetos\PercentCharOccur\PercentCharOccur.dproj</Transaction>
+  </Transactions>
+</BorlandProject>
