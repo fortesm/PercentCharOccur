@@ -71,32 +71,32 @@ begin
      Reset(Arquivo);
 
      ZeroMemory(@A[1],length(A));
-     While not Eof(Arquivo) do  // Lê o conteúdo do texto
+     While not Eof(Arquivo) do  // LÃª o conteÃºdo do texto
      begin
         ReadLn(Arquivo, Linha);
         for I := Low(A) to High(A) do
             A[i] := A[i]  + CountChar(Linha, L[i]);
 
         for c in Linha do
-           if not c.IsWhiteSpace and c.isLetter then  // Precisa de System.Character na clausula uses Delphi 10 sydney para cima
-              inc(Cont);                              // CASO SEU DELPHI SEJA ANTIGO SUBSTITUIR o Helper c.isWhiteSpace POR  IsWhiteSpace(c)
-     end;                                             // E c.IsLetter  POR isLetter(c)
+           if not c.IsWhiteSpace and c.isLetter then  // to use .isLetter helper, add System.Character in uses clausuÃ§e on Delphi 10 Sydney and above
+              inc(Cont);                              // if your DELPHI is older use IsWhiteSpace(c) and isLetter(c) instead
+     end;                                             
      Memo.Clear;
-     Memo.Lines.Add('Total de Caracteres sem acentos e sem espaço: '+ IntToStr(Cont) + ' Caracteres');
+     Memo.Lines.Add('Total de Caracteres sem acentos e sem espaÃ§o: '+ IntToStr(Cont) + ' Caracteres');
      Memo.Lines.Add('');
 
      for I := Low(A) to High(A) do
       begin
-         Memo.Lines.Add('Total de ocorrências da letra ' + L[i] + ' : ' + IntToStr(  A[i] ));
+         Memo.Lines.Add('Total de ocorrÃªncias da letra ' + L[i] + ' : ' + IntToStr(  A[i] ));
          Percent := A[i] * 100 / Cont;
-         Memo.Lines.Add('Porcentagem de ocorrências da letra ' + L[i] + ' : ' + formatfloat('##0.00', Percent ) + '%');
+         Memo.Lines.Add('Porcentagem de ocorrÃªncias da letra ' + L[i] + ' : ' + formatfloat('##0.00', Percent ) + '%');
          Memo.Lines.Add('');
       end;
      Memo.SelStart := 0;
      Memo.SelLength := 1;
      CloseFile(Arquivo);
   end
-  else ShowMessage ('Arquivo Não Encontrado!');
+  else ShowMessage ('Arquivo NÃ£o Encontrado!');
 end;
 
 end.
